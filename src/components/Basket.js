@@ -14,7 +14,9 @@ const Basket = (props) => {
         <div key={item.id} className="row">
             <div className="col-2">{item.name}</div>
             <div className="col-2">
-                <button className="add" onClick={() => onAddProduct(item)}>+</button>
+                <button className="add" onClick={() => {
+                  console.log(item.id)
+                  onAddProduct(item)}}>+</button>
                 <button className="remove" onClick={() => onRemoveProduct(item)}>-</button>
             </div>
             <div className="col-2 text-right">

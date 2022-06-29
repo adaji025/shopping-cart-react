@@ -19,6 +19,7 @@ function App() {
     } else {
       setCartItem([...cartItem, { ...product, qty: 1 }]);
     }
+    console.log('it works');
   };
 
   const onRemoveProduct = (product) => {
